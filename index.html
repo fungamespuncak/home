@@ -3,176 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun Games Puncak</title>
+  <title>Fun Games Puncak - Jasa Outdoor Activity</title>
   <style>
-    :root {
-      --green-dark: #064e3b;
-      --green-light: #10b981;
-      --blue-dark: #0f172a;
-      --white: #ffffff;
-      --black: #111111;
-      --gray: #f3f4f6;
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    header { background: #003366; color: #fff; text-align: center; padding: 50px 20px; }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin-top: 10px; }
+    header a {
+      display: inline-block; margin-top: 20px; padding: 12px 24px;
+      background: #228B22; color: #fff; text-decoration: none; border-radius: 5px;
     }
-    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
-    body {line-height:1.7; color:var(--black); font-size:16px;}
-    header, section {padding:60px 20px;}
-    h1, h2, h3 {margin-bottom:20px; font-weight:700;}
-    p, li {margin-bottom:15px; font-size:16px;}
-    .container {max-width:1200px; margin:auto;}
-    nav {display:flex; justify-content:space-between; align-items:center; background:var(--blue-dark); padding:20px;}
-    nav a {color:var(--white); margin:0 10px; text-decoration:none; font-weight:bold;}
-    nav a:hover {color:var(--green-light);}
-    .hero {background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/500?random=1') center/cover no-repeat; color:var(--white); text-align:center; padding:100px 20px;}
-    .hero h1 {font-size:3em; margin-bottom:20px;}
-    .hero a {background:var(--green-light); color:var(--white); padding:15px 30px; text-decoration:none; border-radius:8px; font-weight:bold;}
-    section:nth-child(even) {background:var(--gray); color:var(--black);}
-    .dark-section {background:var(--green-dark); color:var(--white);}
-    .blue-section {background:var(--blue-dark); color:var(--white);}
-    .dark-section h2, .dark-section h3, .blue-section h2, .blue-section h3 {color:var(--white);}
-    .dark-section p, .dark-section li, .blue-section p, .blue-section li {color:var(--white);}
-    ul {padding-left:20px;}
-    li {list-style:disc;}
-    .features, .team, .clients, .gallery, .testimonials {display:grid; gap:20px;}
-    .features {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-    .features div {background:var(--white); padding:20px; border-radius:10px; text-align:center; color:var(--black);}
-    .team {grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
-    .team div {background:var(--white); color:var(--black); padding:20px; border-radius:10px; text-align:center;}
-    .gallery {grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
-    .gallery img {width:100%; border-radius:10px;}
-    .testimonials {grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
-    .testimonial {background:var(--white); color:var(--black); padding:20px; border-radius:10px;}
-    footer {background:var(--blue-dark); color:var(--white); text-align:center; padding:20px;}
+    section { padding: 60px 20px; }
+    section h2 { text-align: center; margin-bottom: 30px; }
+    .dark-green { background: #006400; color: #fff; }
+    .dark-blue { background: #003366; color: #fff; }
+    .light { background: #f5f5f5; color: #111; }
+    ul { max-width: 800px; margin: auto; padding-left: 20px; }
+    .services, .team, .clients, .gallery, .testimonials { display: grid; grid-gap: 20px; max-width: 1000px; margin: auto; }
+    .services { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .gallery { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .gallery img { width: 100%; border-radius: 8px; }
+    .testimonials blockquote {
+      background: #fff; color: #111; padding: 20px; border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer { background: #222; color: #fff; text-align: center; padding: 30px 20px; }
+    footer a { color: #4CAF50; text-decoration: none; }
   </style>
 </head>
 <body>
 
-  <nav>
-    <div class="logo"><a href="#" style="color:var(--green-light);">FunGamesPuncak</a></div>
-    <div>
-      <a href="#tentang">Tentang</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#galeri">Galeri</a>
-      <a href="#kontak">Kontak</a>
-    </div>
-  </nav>
-
-  <section class="hero">
+  <!-- HERO -->
+  <header>
     <h1>Fun Games Puncak</h1>
-    <p>Mitra terbaik kegiatan outdoor activity di Puncak</p>
-    <a href="https://wa.me/6281234567890">Booking Sekarang</a>
+    <p>Outdoor Activity • Camping • Outbound • Fun Games</p>
+    <a href="https://wa.me/628xxxxxx" target="_blank">📲 Booking via WhatsApp</a>
+  </header>
+
+  <!-- TENTANG KAMI -->
+  <section class="dark-green">
+    <h2>Tentang Kami</h2>
+    <p style="max-width:800px;margin:auto;text-align:center">
+      Fun Games Puncak adalah penyedia jasa kegiatan outdoor activity berbasis di kawasan wisata Puncak, Jawa Barat. 
+      Kami berada di bawah naungan KLIK Manajemen yang berfokus pada event organizer, media kreatif, dan jasa pariwisata. 
+      Dengan tim profesional, kami menghadirkan pengalaman seru, edukatif, dan berkesan melalui camping, outbound, dan fun games.
+    </p>
   </section>
 
-  <section id="tentang" class="dark-section">
-    <div class="container">
-      <h2>Tentang Kami</h2>
-      <p>Fun Games Puncak adalah penyedia jasa kegiatan outdoor activity berbasis di kawasan wisata Puncak, Jawa Barat. Kami hadir untuk menjadi mitra terbaik dalam menciptakan pengalaman seru, edukatif, dan berkesan melalui berbagai program camping, outbound, dan fun games.</p>
-      <p>Fun Games Puncak berada di bawah naungan KLIK Manajemen, sebuah manajemen kreatif yang bergerak di bidang event organizer, media kreatif, dan jasa pariwisata.</p>
+  <!-- VISI & MISI -->
+  <section class="dark-blue">
+    <h2>Visi & Misi</h2>
+    <p style="max-width:800px;margin:auto;text-align:center">
+      <strong>Visi:</strong> Menjadi penyedia jasa outdoor activity terbaik di Puncak yang mengedukasi, menghibur, dan membangun kebersamaan.  
+    </p>
+    <ul>
+      <li>Menyediakan layanan one-stop solution untuk kegiatan outdoor.</li>
+      <li>Menghadirkan pengalaman belajar & rekreasi yang menyenangkan.</li>
+      <li>Mendukung sekolah, instansi, dan komunitas dalam membangun kebersamaan.</li>
+      <li>Menyediakan peralatan dan fasilitator yang aman, profesional, dan ramah.</li>
+    </ul>
+  </section>
+
+  <!-- LAYANAN -->
+  <section class="light">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div><h3>Camping Experience</h3><p>Perkemahan pelajar, instansi, keluarga + sewa peralatan lengkap.</p></div>
+      <div><h3>Outbound & Fun Games</h3><p>Outbound edukatif, fun games umum, team building instansi.</p></div>
+      <div><h3>Adventure Activity</h3><p>Hiking, tracking, hingga kegiatan custom sesuai kebutuhan.</p></div>
+      <div><h3>Dokumentasi Acara</h3><p>Foto & video dokumentasi profesional untuk setiap kegiatan.</p></div>
     </div>
   </section>
 
-  <section class="blue-section">
-    <div class="container">
-      <h2>Visi & Misi</h2>
-      <h3>Visi</h3>
-      <p>Menjadi penyedia jasa outdoor activity terbaik di Puncak.</p>
-      <h3>Misi</h3>
-      <ul>
-        <li>Menyediakan layanan one-stop solution untuk kegiatan outdoor.</li>
-        <li>Menghadirkan pengalaman belajar & rekreasi yang menyenangkan.</li>
-        <li>Mendukung sekolah, instansi, dan komunitas.</li>
-        <li>Menyediakan peralatan dan fasilitator profesional.</li>
-      </ul>
-    </div>
+  <!-- KEUNGGULAN -->
+  <section class="dark-green">
+    <h2>Keunggulan Kami</h2>
+    <ul>
+      <li>✅ Di bawah naungan KLIK Manajemen berpengalaman event & outdoor.</li>
+      <li>✅ Tim profesional (6 orang) dengan peran spesialis.</li>
+      <li>✅ Lokasi strategis di Puncak – destinasi populer wisata alam.</li>
+      <li>✅ Peralatan terawat & fasilitator berpengalaman.</li>
+      <li>✅ Paket fleksibel: sesuai kebutuhan & anggaran.</li>
+    </ul>
   </section>
 
-  <section id="layanan">
-    <div class="container">
-      <h2>Layanan Kami</h2>
-      <div class="features">
-        <div><h3>Camping Experience</h3><p>Perkemahan & sewa peralatan lengkap.</p></div>
-        <div><h3>Outbound & Fun Games</h3><p>Outbound edukatif, fun games, dan team building.</p></div>
-        <div><h3>Adventure Activity</h3><p>Hiking, tracking, dan aktivitas custom.</p></div>
-        <div><h3>Dokumentasi Acara</h3><p>Foto & video dokumentasi profesional.</p></div>
-      </div>
-    </div>
+  <!-- TIM -->
+  <section class="dark-blue">
+    <h2>Struktur Tim</h2>
+    <ul>
+      <li>Direktur Operasional</li>
+      <li>Marketing & Branding</li>
+      <li>Event Planner & Koordinator Lapangan</li>
+      <li>Instruktur Outbound / Fun Games Master</li>
+      <li>Logistik & Peralatan</li>
+      <li>Dokumentasi & Media</li>
+    </ul>
   </section>
 
-  <section class="blue-section">
-    <div class="container">
-      <h2>Keunggulan Kami</h2>
-      <ul>
-        <li>✅ Naungan KLIK Manajemen berpengalaman</li>
-        <li>✅ Tim profesional dengan spesialisasi</li>
-        <li>✅ Lokasi strategis di Puncak</li>
-        <li>✅ Peralatan terawat</li>
-        <li>✅ Paket fleksibel sesuai kebutuhan</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="blue-section">
-    <div class="container">
-      <h2>Struktur Tim</h2>
-      <div class="team">
-        <div><h3>Direktur Operasional</h3></div>
-        <div><h3>Marketing & Branding</h3></div>
-        <div><h3>Event Planner</h3></div>
-        <div><h3>Instruktur Outbound</h3></div>
-        <div><h3>Logistik & Peralatan</h3></div>
-        <div><h3>Dokumentasi & Media</h3></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container">
+  <!-- KLIEN -->
+  <section class="light">
     <h2>Klien & Target Pasar</h2>
-    <div class="features">
-      <div><h3>Sekolah & Kampus</h3><p>Kegiatan perkemahan & outbound edukatif.</p></div>
-      <div><h3>Instansi & Perusahaan</h3><p>Team building & motivasi.</p></div>
-      <div><h3>Keluarga & Wisatawan</h3><p>Camping & fun games santai.</p></div>
-      <div><h3>Komunitas & EO</h3><p>Kolaborasi acara outdoor.</p></div>
+    <ul>
+      <li>🎓 Sekolah & Kampus → outbound edukatif & perkemahan.</li>
+      <li>🏢 Instansi & Perusahaan → team building & motivasi.</li>
+      <li>👨‍👩‍👧 Keluarga & Wisatawan → camping & fun games santai.</li>
+      <li>🤝 Komunitas & EO → kolaborasi acara outdoor.</li>
+    </ul>
+  </section>
+
+  <!-- GALERI -->
+  <section class="dark-green">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250" alt="Camping">
+      <img src="https://via.placeholder.com/400x250" alt="Outbound">
+      <img src="https://via.placeholder.com/400x250" alt="Fun Games">
+      <img src="https://via.placeholder.com/400x250" alt="Team Building">
     </div>
   </section>
 
-  <section id="galeri" class="dark-section">
-    <div class="container">
-      <h2>Galeri Kegiatan</h2>
-      <div class="gallery">
-        <img src="https://picsum.photos/400/300?random=2" alt="Galeri 1">
-        <img src="https://picsum.photos/400/300?random=3" alt="Galeri 2">
-        <img src="https://picsum.photos/400/300?random=4" alt="Galeri 3">
-        <img src="https://picsum.photos/400/300?random=5" alt="Galeri 4">
-      </div>
+  <!-- TESTIMONI -->
+  <section class="dark-blue">
+    <h2>Testimoni Klien</h2>
+    <div class="testimonials">
+      <blockquote>“Acara outbound sekolah kami sangat menyenangkan, anak-anak antusias sekali. Terima kasih Fun Games Puncak!”</blockquote>
+      <blockquote>“Team building perusahaan berjalan sukses, penuh tawa dan kebersamaan.”</blockquote>
+      <blockquote>“Fasilitas camping lengkap dan timnya ramah sekali. Recommended!”</blockquote>
     </div>
   </section>
 
-  <section class="blue-section">
-    <div class="container">
-      <h2>Testimoni Klien</h2>
-      <div class="testimonials">
-        <div class="testimonial"><p>"Outbound di Fun Games Puncak seru banget! Anak-anak sekolah kami sangat terhibur."</p><strong>- Kepala Sekolah</strong></div>
-        <div class="testimonial"><p>"Team building perusahaan jadi makin solid, terima kasih tim profesionalnya."</p><strong>- HRD Perusahaan</strong></div>
-        <div class="testimonial"><p>"Camping keluarga kami jadi pengalaman yang berkesan."</p><strong>- Wisatawan</strong></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="dark-section" style="text-align:center;">
-    <h2>Ayo Rencanakan Acara Anda!</h2>
-    <a href="https://wa.me/6281234567890" style="background:var(--green-light); padding:15px 30px; border-radius:8px; color:#fff; text-decoration:none; font-weight:bold;">Hubungi Kami via WhatsApp</a>
-  </section>
-
-  <section id="kontak" class="container">
+  <!-- KONTAK -->
+  <section class="light">
     <h2>Kontak Kami</h2>
-    <p>📍 Lokasi: Puncak, Jawa Barat</p>
-    <p>📞 Telepon/WA: 0812-3456-7890</p>
-    <p>📧 Email: info@fungamespuncak.com</p>
-    <p>📲 Instagram: @fungamespuncak</p>
-    <p>🌐 Website: klikmanajemen.com/fungamespuncak</p>
+    <p style="text-align:center">
+      📍 Lokasi: Puncak, Jawa Barat <br>
+      📞 WA: <a href="https://wa.me/628xxxxxx">+62 8xxxxxx</a><br>
+      📧 Email: info@fungamespuncak.com <br>
+      📲 Instagram: <a href="https://instagram.com/fungamespuncak" target="_blank">@fungamespuncak</a><br>
+      🌐 Website: <a href="https://klikmanajemen.com/fungamespuncak" target="_blank">klikmanajemen.com/fungamespuncak</a>
+    </p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Fun Games Puncak. Semua Hak Dilindungi.</p>
+    <p>© 2025 Fun Games Puncak | Powered by KLIK Manajemen</p>
   </footer>
 
 </body>
