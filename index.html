@@ -2,26 +2,26 @@
 <!DOCTYPE html>
 <html b:css='true' b:templateVersion='2.0.5' b:version='2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <title><b:if cond='data:blog.pageName'><data:blog.pageName/> | </b:if><data:blog.title/></title>
+    <title>fungamespuncak.github.io | Home</title>
     <!-- Meta-tags -->
-    <meta expr:charset='data:blog.encoding'/>
+    <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
     <!-- Open Graph & Twitter-->
-    <b:include data='blog' name='openGraphMetaData'/>
-    <b:if cond='data:blog.pageType in [&quot;item&quot;, &quot;static_page&quot;]'>
+    <include data='blog' name='openGraphMetaData'/>
+    <if cond='data:blog.pageType in [&quot;item&quot;, &quot;static_page&quot;]'>
       <meta content='article' property='og:type'/>
       <meta content='true' property='og:rich_attachment'/>
-    <b:else/>
+    <else/>
       <meta content='website' property='og:type'/>
-    </b:if>
+    </if>
     <meta expr:content='data:blog.locale' property='og:locale'/>
     <meta expr:content='data:blog.title' property='og:site_name'/>
-    <b:if cond='data:blog.postImageUrl != &quot;&quot;'>
+    <if cond='data:blog.postImageUrl != &quot;&quot;'>
       <meta content='summary_large_image' name='twitter:card'/>
-    <b:else/>
+    <else/>
       <meta content='summary' name='twitter:card'/>
-    </b:if>
+    </if>
     <meta content='@TWITTER-OF-YOUR-SITE' name='twitter:site'/>
     <meta content='@YOUR-TWITTER-USERNAME' name='twitter:creator'/>
     <!-- Icons -->
@@ -35,7 +35,7 @@
     <meta content='#5698c1' name='msapplication-TileColor'/>
     <meta content='#5698c1' name='theme-color'/>
     <!-- Styles -->
-    <b:skin><![CDATA[
+    <skin><![CDATA[
 /*
 * Theme Name: Startupium
 * Theme URL: https://github.com/web-xaser/blogspot-themes/tree/master/Startupium
@@ -400,8 +400,8 @@ text-align: center;
 color: #000;
 font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
 }
-    ]]></b:skin>
-    <b:if cond='data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
+    ]]></skin>
+    <if cond='data:blog.pageType != &quot;item&quot; and data:blog.pageType != &quot;static_page&quot;'>
       <style type='text/css'>
         .blog__posts {
           margin: 0 auto;
@@ -500,8 +500,8 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
           float: left;
         }
       </style>
-    </b:if>
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    </if>
+    <if cond='data:blog.url == data:blog.homepageUrl'>
       <style type='text/css'>
         /* ===== HEADER ABOUT ===== */
         #about-community {
@@ -876,10 +876,10 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
           background: rgb(86, 152, 193) url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAzOCAzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHJva2U9IiNmZmYiPiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSIgc3Ryb2tlLXdpZHRoPSIyIj4gICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1vcGFjaXR5PSIuNSIgY3g9IjE4IiBjeT0iMTgiIHI9IjE4Ii8+ICAgICAgICAgICAgPHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4Ij4gICAgICAgICAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0gICAgICAgICAgICAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgICAgICAgICAgICAgICAgICAgIHR5cGU9InJvdGF0ZSIgICAgICAgICAgICAgICAgICAgIGZyb209IjAgMTggMTgiICAgICAgICAgICAgICAgICAgICB0bz0iMzYwIDE4IDE4IiAgICAgICAgICAgICAgICAgICAgZHVyPSIxcyIgICAgICAgICAgICAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+ICAgICAgICAgICAgPC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) center center no-repeat;
         }
       </style>
-    </b:if>
+    </if>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext' rel='stylesheet'/>
     <link href='//unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css' rel='stylesheet'/>
-    <b:include data='blog' name='all-head-content'/>
+    <include data='blog' name='all-head-content'/>
   </head>
   <body>
     <div id='preloader'/>
@@ -887,101 +887,101 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
       <!-- HEADER [START] -->
       <header class='header-outer'>
         <div class='header-wrapper'>
-        <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-          <b:widget id='Header1' locked='true' mobile='yes' title='Startupium (Header)' type='Header' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='displayUrl'/>
-              <b:widget-setting name='displayHeight'>0</b:widget-setting>
-              <b:widget-setting name='sectionWidth'>600</b:widget-setting>
-              <b:widget-setting name='useImage'>false</b:widget-setting>
-              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-              <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-              <b:widget-setting name='displayWidth'>0</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-              <b:if cond='data:useImage'>
-                <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+        <section class='header' id='header' maxwidgets='1' showaddelement='no'>
+          <widget id='Header1' locked='true' mobile='yes' title='Startupium (Header)' type='Header' version='1'>
+            <widget-settings>
+              <widget-setting name='displayUrl'/>
+              <widget-setting name='displayHeight'>0</widget-setting>
+              <widget-setting name='sectionWidth'>600</widget-setting>
+              <widget-setting name='useImage'>false</widget-setting>
+              <widget-setting name='shrinkToFit'>false</widget-setting>
+              <widget-setting name='imagePlacement'>BEHIND</widget-setting>
+              <widget-setting name='displayWidth'>0</widget-setting>
+            </widget-settings>
+            <includable id='main'>
+              <if cond='data:useImage'>
+                <if cond='data:imagePlacement == &quot;BEHIND&quot;'>
                   <div class='blog-title'>
-                    <b:if cond='data:blog.url != data:blog.homepageUrl'>
+                    <if cond='data:blog.url != data:blog.homepageUrl'>
                       <a expr:href='data:blog.homepageUrl'>
                         <img class='header-image' expr:alt='data:title' expr:src='resizeImage(data:sourceUrl, 30, &quot;1:1&quot;)' expr:title='data:title'/>
-                        <b:include name='title'/>
+                        <include name='title'/>
                       </a>
-                    <b:else/>
+                    <else/>
                       <img class='header-image' expr:alt='data:title' expr:src='resizeImage(data:sourceUrl, 30, &quot;1:1&quot;)' expr:title='data:title'/>
-                      <b:include name='title'/>
-                    </b:if>
+                      <include name='title'/>
+                    </if>
                   </div>
-                <b:else/>
+                <else/>
                   <div class='blog-title'>
-                    <b:if cond='data:blog.url != data:blog.homepageUrl'>
+                    <if cond='data:blog.url != data:blog.homepageUrl'>
                       <a expr:href='data:blog.homepageUrl'>
                         <img class='header-image' expr:alt='data:title' expr:src='resizeImage(data:sourceUrl, 30)' expr:title='data:title'/>
                       </a>
-                    <b:else/>
+                    <else/>
                       <img class='header-image' expr:alt='data:title' expr:src='resizeImage(data:sourceUrl, 30)' expr:title='data:title'/>
-                    </b:if>
+                    </if>
                   </div>
-                </b:if>
-              <b:else/>
+                </if>
+              <else/>
                 <div class='blog-title'>
-                  <b:if cond='data:blog.url != data:blog.homepageUrl'>
+                  <if cond='data:blog.url != data:blog.homepageUrl'>
                     <a expr:href='data:blog.homepageUrl'>
-                      <b:include name='title'/>
+                      <include name='title'/>
                     </a>
-                  <b:else/>
-                    <b:include name='title'/>
-                  </b:if>
+                  <else/>
+                    <include name='title'/>
+                  </if>
                 </div>
-                <b:if cond='data:blog.url != data:blog.homepageUrl'><b:include name='description'/></b:if>
-              </b:if>
-            </b:includable>
-            <b:includable id='description'/>
-            <b:includable id='title'>
+                <if cond='data:blog.url != data:blog.homepageUrl'><include name='description'/></if>
+              </if>
+            </includable>
+            <includable id='description'/>
+            <includable id='title'>
               <data:title/>
-            </b:includable>
-          </b:widget>
-        </b:section>
+            </includable>
+          </widget>
+        </section>
         <!-- MENU [START] -->
-        <b:section class='navigation' id='navigation' maxwidgets='1' showaddelement='no'>
-          <b:widget id='PageList1' locked='true' mobile='yes' title='Header Menu' type='PageList' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='homeTitle'>Home</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
+        <section class='navigation' id='navigation' maxwidgets='1' showaddelement='no'>
+          <widget id='PageList1' locked='true' mobile='yes' title='Header Menu' type='PageList' version='1'>
+            <widget-settings>
+              <widget-setting name='homeTitle'>Home</widget-setting>
+            </widget-settings>
+            <includable id='main'>
               <ul class='menu'>
-                <b:loop values='data:links' var='link'>
+                <loop values='data:links' var='link'>
                   <li>
-                    <b:if cond='data:link.isCurrentPage'>
+                    <if cond='data:link.isCurrentPage'>
                       <a class='current' expr:href='data:link.href'>
                         <data:link.title/>
                       </a>
-                    <b:else/>
+                    <else/>
                       <a expr:href='data:link.href'>
                         <data:link.title/>
                       </a>
-                    </b:if>
+                    </if>
                   </li>
-                </b:loop>
+                </loop>
               </ul>
               <select class='dropdown-menu' onchange='window.location.href = this.options[this.selectedIndex].value;'>
                 <option value=''><data:title/></option>
-                <b:loop values='data:links' var='link'>
-                  <b:if cond='data:link.isCurrentPage'>
+                <loop values='data:links' var='link'>
+                  <if cond='data:link.isCurrentPage'>
                     <option expr:value='data:link.href' selected='selected'><data:link.title/></option>
-                  <b:else/>
+                  <else/>
                     <option expr:value='data:link.href'><data:link.title/></option>
-                  </b:if>
-                </b:loop>
+                  </if>
+                </loop>
               </select>
-            </b:includable>
-          </b:widget>
-        </b:section>
+            </includable>
+          </widget>
+        </section>
         <!-- MENU [END] -->
         </div>
       </header>
       <!-- HEADER [END] -->
-      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <if cond='data:blog.url == data:blog.homepageUrl'>
         <!-- PROMO SECTION [START] -->
         <div id='about-community'>
           <h1><data:blog.title/></h1>
@@ -990,30 +990,30 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
         </div>
         <!-- PROMO SECTION [END] -->
         <!-- TEXT SLIDER [START] -->
-        <b:section class='text-slider-section' id='text-slider-section' maxwidgets='1' showaddelement='no'>
-          <b:widget id='LinkList1' locked='false' mobile='no' title='Latest News' type='LinkList' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='sorting'>NONE</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
+        <section class='text-slider-section' id='text-slider-section' maxwidgets='1' showaddelement='no'>
+          <widget id='LinkList1' locked='false' mobile='no' title='Latest News' type='LinkList' version='1'>
+            <widget-settings>
+              <widget-setting name='sorting'>NONE</widget-setting>
+            </widget-settings>
+            <includable id='main'>
               <div class='text-slider-wrapper'>
                 <div class='text-slider-inner'>
                   <h3><data:title/></h3>
                   <div id='text-slider'>
                     <ul>
-                      <b:loop values='data:links' var='link'>
+                      <loop values='data:links' var='link'>
                         <li>
-                          <span><b:eval expr='snippet(data:link.name, {length: 150})'/></span>
+                          <span><eval expr='snippet(data:link.name, {length: 150})'/></span>
                           <a expr:href='data:link.target'>Read More</a>
                         </li>
-                      </b:loop>
+                      </loop>
                     </ul>
                   </div>
                 </div>
               </div>
-            </b:includable>
-          </b:widget>
-        </b:section>
+            </includable>
+          </widget>
+        </section>
         <!-- TEXT SLIDER [END] -->
         <!-- SERVICES [START] -->
         <div class='main-navigation-wrapper' id='services'>
@@ -1048,8 +1048,8 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
           </div>
         </div>
         <!-- SERVICES [END] -->
-      </b:if>
-      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      </if>
+      <if cond='data:blog.url == data:blog.homepageUrl'>
         <div class='blog-news' id='articles'>
           <h2 class='latest-news'>Latest Articles</h2>
           <form expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='search-form' method='get' role='search'>
@@ -1057,70 +1057,70 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
             <input aria-label='Search' autocomplete='off' class='search-input' id='s' name='q' placeholder='Search..' type='search'/>
           </form>
         </div>
-      </b:if>
+      </if>
       <!-- BLOG [START] -->
-      <b:section class='main' id='main' showaddelement='no'>
-        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
-          <b:widget-settings>
-            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-            <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-            <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-            <b:widget-setting name='authorLabel'>Author</b:widget-setting>
-            <b:widget-setting name='showCommentLink'>false</b:widget-setting>
-            <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-            <b:widget-setting name='postLocationLabel'>Location</b:widget-setting>
-            <b:widget-setting name='showAuthor'>true</b:widget-setting>
-            <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-            <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='timestampLabel'>Timestamp</b:widget-setting>
-            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-            <b:widget-setting name='showLabels'>true</b:widget-setting>
-            <b:widget-setting name='showLocation'>true</b:widget-setting>
-            <b:widget-setting name='postLabelsLabel'>Labels</b:widget-setting>
-            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-            <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-            <b:widget-setting name='showReactions'>false</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main' var='top'>
-            <b:include data='top' name='status-message'/>
+      <section class='main' id='main' showaddelement='no'>
+        <widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+          <widget-settings>
+            <widget-setting name='showDateHeader'>true</widget-setting>
+            <widget-setting name='style.textcolor'>#000000</widget-setting>
+            <widget-setting name='showShareButtons'>true</widget-setting>
+            <widget-setting name='authorLabel'>Author</widget-setting>
+            <widget-setting name='showCommentLink'>false</widget-setting>
+            <widget-setting name='style.urlcolor'>#008000</widget-setting>
+            <widget-setting name='postLocationLabel'>Location</widget-setting>
+            <widget-setting name='showAuthor'>true</widget-setting>
+            <widget-setting name='style.linkcolor'>#0000ff</widget-setting>
+            <widget-setting name='style.unittype'>TextAndImage</widget-setting>
+            <widget-setting name='style.bgcolor'>#ffffff</widget-setting>
+            <widget-setting name='timestampLabel'>Timestamp</widget-setting>
+            <widget-setting name='showAuthorProfile'>false</widget-setting>
+            <widget-setting name='style.layout'>1x1</widget-setting>
+            <widget-setting name='showLabels'>true</widget-setting>
+            <widget-setting name='showLocation'>true</widget-setting>
+            <widget-setting name='postLabelsLabel'>Labels</widget-setting>
+            <widget-setting name='showTimestamp'>true</widget-setting>
+            <widget-setting name='postsPerAd'>1</widget-setting>
+            <widget-setting name='showBacklinks'>false</widget-setting>
+            <widget-setting name='style.bordercolor'>#ffffff</widget-setting>
+            <widget-setting name='showInlineAds'>false</widget-setting>
+            <widget-setting name='showReactions'>false</widget-setting>
+          </widget-settings>
+          <includable id='main' var='top'>
+            <include data='top' name='status-message'/>
             <div class='blog__posts'>
-              <b:loop values='data:posts' var='post'>
-                <b:include data='post' name='post'/>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <b:include data='post' name='comment_picker'/>
-                </b:if>
-              </b:loop>
-              <b:if cond='data:blog.pageType not in [&quot;static_page&quot;, &quot;item&quot;, &quot;error_page&quot;]'>
-                <b:include name='nextprev'/>
-              </b:if>
+              <loop values='data:posts' var='post'>
+                <include data='post' name='post'/>
+                <if cond='data:blog.pageType == &quot;item&quot;'>
+                  <include data='post' name='comment_picker'/>
+                </if>
+              </loop>
+              <if cond='data:blog.pageType not in [&quot;static_page&quot;, &quot;item&quot;, &quot;error_page&quot;]'>
+                <include name='nextprev'/>
+              </if>
             </div>
-          </b:includable>
-          <b:includable id='backlinkDeleteIcon' var='backlink'/>
-          <b:includable id='backlinks' var='post'/>
-          <b:includable id='comment-form' var='post'/>
-          <b:includable id='commentDeleteIcon' var='comment'/>
-          <b:includable id='comment_count_picker' var='post'/>
-          <b:includable id='comment_picker' var='post'>
+          </includable>
+          <includable id='backlinkDeleteIcon' var='backlink'/>
+          <includable id='backlinks' var='post'/>
+          <includable id='comment-form' var='post'/>
+          <includable id='commentDeleteIcon' var='comment'/>
+          <includable id='comment_count_picker' var='post'/>
+          <includable id='comment_picker' var='post'>
             <!-- DISQUS COMMENTS [START] -->
             <div id='disqus_thread'/>
             <script async='async' src='//YOUR-DISQUS-SHORTNAME.disqus.com/embed.js' type='text/javascript'/>
             <!-- DISQUS COMMENTS [END] -->
-          </b:includable>
-          <b:includable id='comments' var='post'/>
-          <b:includable id='feedLinks'/>
-          <b:includable id='feedLinksBody' var='links'/>
-          <b:includable id='iframe_comments' var='post'/>
-          <b:includable id='mobile-index-post' var='post'/>
-          <b:includable id='mobile-main' var='top'/>
-          <b:includable id='mobile-nextprev'/>
-          <b:includable id='mobile-post' var='post'/>
-          <b:includable id='nextprev'>
-            <b:if cond='data:blog.url == data:blog.homepageUrl'>
+          </includable>
+          <includable id='comments' var='post'/>
+          <includable id='feedLinks'/>
+          <includable id='feedLinksBody' var='links'/>
+          <includable id='iframe_comments' var='post'/>
+          <includable id='mobile-index-post' var='post'/>
+          <includable id='mobile-main' var='top'/>
+          <includable id='mobile-nextprev'/>
+          <includable id='mobile-post' var='post'/>
+          <includable id='nextprev'>
+            <if cond='data:blog.url == data:blog.homepageUrl'>
               <div class='blog-pager'>
                 <a class='all-posts'>Read All Posts</a>
                 <script type='text/javascript'>
@@ -1137,16 +1137,16 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
                   //]]>
                 </script>
               </div>
-            <b:else/>
+            <else/>
               <div class='blog-pager'>
-                <b:if cond='data:newerPageUrl'>
-                  <b:if cond='data:newerPageUrl != data:blog.homepageUrl'>
+                <if cond='data:newerPageUrl'>
+                  <if cond='data:newerPageUrl != data:blog.homepageUrl'>
                     <a class='newer-link' expr:href='data:newerPageUrl' rel='next'>&#8592; <data:newerPageTitle/></a>
-                  </b:if>
-                </b:if>
-                <b:if cond='data:olderPageUrl'>
+                  </if>
+                </if>
+                <if cond='data:olderPageUrl'>
                   <a class='older-link' expr:href='data:olderPageUrl' rel='prev'><data:olderPageTitle/> &#8594;</a>
-                </b:if>
+                </if>
               </div>
               <script type='text/javascript'>
                 var numberOnPage = &#39;<data:numPosts/>&#39;;
@@ -1165,49 +1165,49 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
                 //]]>
               </script>
               <script expr:src='data:blog.homepageUrl + &quot;feeds/posts/default?alt=json-in-script&amp;callback=numberOfPosts&quot;'/>
-            </b:if>
-          </b:includable>
-          <b:includable id='post' var='post'>
+            </if>
+          </includable>
+          <includable id='post' var='post'>
             <article class='post' expr:id='data:post.id'>
-              <b:if cond='data:blog.pageType not in [&quot;item&quot;, &quot;static_page&quot;]'>
-                <b:if cond='data:post.firstImageUrl != &quot;&quot;'>
+              <if cond='data:blog.pageType not in [&quot;item&quot;, &quot;static_page&quot;]'>
+                <if cond='data:post.firstImageUrl != &quot;&quot;'>
                   <img class='article__image' expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl, 255, &quot;1:1&quot;)'/>
-                </b:if>
+                </if>
                 <a class='article__content' expr:href='data:post.url'>
-                  <b:if cond='data:post.dateHeader'>
+                  <if cond='data:post.dateHeader'>
                     <time class='article__time' expr:datetime='data:post.timestampISO8601'>
                       <data:post.dateHeader/>
                       <script type='text/javascript'>var postDate = &quot;<data:post.dateHeader/>&quot;;</script>
                     </time>
-                  <b:else/>
+                  <else/>
                     <time class='article__time' expr:datetime='data:post.timestampISO8601'>
                       <script type='text/javascript'>var pubdate = document.querySelectorAll(&#39;.article__time&#39;)[1]; pubdate.innerText = postDate;</script>
                     </time>
-                  </b:if>
-                  <b:if cond='data:post.title'>
-                    <h2 class='article__title'><b:eval expr='snippet(data:post.title, {length: 90})'/></h2>
-                  </b:if>
+                  </if>
+                  <if cond='data:post.title'>
+                    <h2 class='article__title'><eval expr='snippet(data:post.title, {length: 90})'/></h2>
+                  </if>
                   <div class='article__snippet'>
-                    <b:eval expr='snippet(data:post.longSnippet, {length: 250})'/>
+                    <eval expr='snippet(data:post.longSnippet, {length: 250})'/>
                   </div>
                 </a>
-              <b:else/>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
+              <else/>
+                <if cond='data:blog.pageType == &quot;item&quot;'>
                   <h1 class='post-title'>
                     <data:post.title/>
                   </h1>
-                <b:elseif cond='data:blog.pageType == &quot;static_page&quot;'/>
+                <elseif cond='data:blog.pageType == &quot;static_page&quot;'/>
                   <div class='page' id='blog__category'>
-                    <h1><b:eval expr='snippet(data:post.title, {length: 120, ellipsis: false})'/></h1>
+                    <h1><eval expr='snippet(data:post.title, {length: 120, ellipsis: false})'/></h1>
                   </div>
-                </b:if>
-              </b:if>
+                </if>
+              </if>
               <!-- To-do: styles for post pages -->
-              <b:if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
+              <if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
                 <div class='post-body'>
                   <data:post.body/>
                 </div>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                <if cond='data:blog.pageType == &quot;item&quot;'>
                   <div class='social-buttons'>
                     <script type='text/javascript'>
                       (function(w,doc) {
@@ -1224,135 +1224,135 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
                     <div class='uptolike-buttons' data-background-alpha='0.0' data-background-color='#ffffff' data-buttons-color='#ffffff' data-counter-background-alpha='1.0' data-counter-background-color='#ffffff' data-exclude-show-more='true' data-following-enable='false' data-icon-color='#ffffff' data-like-text-enable='false' data-mobile-sn-ids='fb.vk.tw.wh.gp.ev.gt.' data-mobile-view='true' data-mode='share' data-orientation='horizontal' data-pid='1402358' data-preview-mobile='false' data-selection-enable='true' data-share-counter-size='12' data-share-counter-type='disable' data-share-shape='round-rectangle' data-share-size='30' data-share-style='11' data-sn-ids='fb.tw.vk.gp.bl.tb.ok.lj.mr.ev.gt.em.' data-text-color='#000000' data-top-button='false'/>
                   </div>
                   <div class='post-footer'>
-                      <b:if cond='data:post.dateHeader'>
+                      <if cond='data:post.dateHeader'>
                        <time expr:datetime='data:post.timestampISO8601' expr:title='data:top.timestampLabel' pubdate='pubdate'>
-                         <b:if cond='data:post.dateHeader'>
+                         <if cond='data:post.dateHeader'>
                            <data:post.date/> 
-                         </b:if>
-                         <b:if cond='data:top.showTimestamp'>
+                         </if>
+                         <if cond='data:top.showTimestamp'>
                            <data:post.timestamp/>
-                         </b:if>
+                         </if>
                        </time>
-                     </b:if>
-                     <b:if cond='data:top.showAuthor'>
-                       <b:if cond='data:post.author'>
+                     </if>
+                     <if cond='data:top.showAuthor'>
+                       <if cond='data:post.author'>
                          <span class='post-author'>
-                           <b:if cond='data:post.authorProfileUrl'>
+                           <if cond='data:post.authorProfileUrl'>
                              <a expr:href='data:post.authorProfileUrl + &quot;?rel=author&quot;' expr:title='data:top.authorLabel' rel='nofollow' target='_blank'>
                                <data:post.author/>
                              </a>
-                           <b:else/>
+                           <else/>
                              <data:post.author/>
-                           </b:if>
+                           </if>
                          </span>
-                       </b:if>
-                     </b:if>
-                     <b:if cond='data:top.showLocation'>
-                       <b:if cond='data:post.location'>
+                       </if>
+                     </if>
+                     <if cond='data:top.showLocation'>
+                       <if cond='data:post.location'>
                          <address>
                            <a expr:href='data:post.location.mapsUrl' expr:title='data:postLocationLabel' rel='nofollow' target='_blank'>
                              <data:post.location.name/>
                            </a>
                          </address>
-                        </b:if>
-                      </b:if>
-                    <b:if cond='data:post.labels'>
+                        </if>
+                      </if>
+                    <if cond='data:post.labels'>
                       <span class='post-labels'>
-                        <b:loop values='data:post.labels' var='label'>
+                        <loop values='data:post.labels' var='label'>
                           <a expr:href='data:label.url + &quot;#last-news&quot;' expr:title='data:postLabelsLabel' rel='tag'>
                             #<data:label.name/>
                           </a>
-                        </b:loop>
+                        </loop>
                       </span>
-                    </b:if>
+                    </if>
                   </div>
-                </b:if>
-              </b:if>
+                </if>
+              </if>
             </article>
-          </b:includable>
-          <b:includable id='postQuickEdit' var='post'/>
-          <b:includable id='shareButtons' var='post'/>
-          <b:includable id='status-message'>
-            <b:if cond='data:blog.pageType == &quot;archive&quot;'>
+          </includable>
+          <includable id='postQuickEdit' var='post'/>
+          <includable id='shareButtons' var='post'/>
+          <includable id='status-message'>
+            <if cond='data:blog.pageType == &quot;archive&quot;'>
               <div class='archive' id='blog__category'>
                 <span>Archive</span>
                 <span><data:blog.pageName/></span>
               </div>
-              <b:if cond='data:numPosts == 0'>
+              <if cond='data:numPosts == 0'>
                 <div class='not-found' style='margin-top: -32px; padding: 96px 0;'>
                   <p id='code'>Oo<span>p</span> <span>:(</span></p>
                   <p id='error'>No <span>posts</span></p>
                 </div>
-              </b:if>
-            </b:if>
-            <b:if cond='data:blog.pageType == &quot;index&quot;'>
-              <b:if cond='data:blog.searchQuery'>
+              </if>
+            </if>
+            <if cond='data:blog.pageType == &quot;index&quot;'>
+              <if cond='data:blog.searchQuery'>
                 <div class='search' id='blog__category'>
                   <span>Search for &quot;<data:blog.searchQuery/>&quot;</span>
-                  <span><data:numPosts/> <b:if cond='data:numPosts ==1 '>result<b:else/>results</b:if></span>
+                  <span><data:numPosts/> <if cond='data:numPosts ==1 '>result<else/>results</if></span>
                 </div>
-                <b:if cond='data:numPosts == 0'>
+                <if cond='data:numPosts == 0'>
                   <div class='not-found' style='margin-top: -32px; padding: 96px 0;'>
                     <p id='code'>Oo<span>p</span> <span>:(</span></p>
                     <p id='error'>No <span>posts</span></p>
                   </div>
-                </b:if>
-              </b:if>
-              <b:if cond='data:blog.searchLabel'>
+                </if>
+              </if>
+              <if cond='data:blog.searchLabel'>
                 <div class='label' id='blog__category'>
                   <span>Category</span>
                   <span>#<data:blog.pageName/></span>
                 </div>
-                <b:if cond='data:numPosts == 0'>
+                <if cond='data:numPosts == 0'>
                   <div class='not-found' style='margin-top: -32px; padding: 96px 0;'>
                     <p id='code'>Oo<span>p</span> <span>:(</span></p>
                     <p id='error'>No <span>posts</span></p>
                   </div>
-                </b:if>
-              </b:if>
-            </b:if>
-            <b:if cond='data:blog.url != data:blog.homepageUrl'>
-              <b:if cond='data:blog.pageType in [&quot;index&quot;, &quot;item&quot;]'>
-                <b:if cond='!data:blog.searchQuery and !data:blog.searchLabel'>
+                </if>
+              </if>
+            </if>
+            <if cond='data:blog.url != data:blog.homepageUrl'>
+              <if cond='data:blog.pageType in [&quot;index&quot;, &quot;item&quot;]'>
+                <if cond='!data:blog.searchQuery and !data:blog.searchLabel'>
                   <div class='blog' id='blog__category'>
                     <span>Blog</span>
                   </div>
-                </b:if>
-              </b:if>
-            </b:if>
-            <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+                </if>
+              </if>
+            </if>
+            <if cond='data:blog.pageType == &quot;error_page&quot;'>
               <div class='not-found'>
                 <p id='code'>4<span>0</span><span>4</span></p>
                 <p id='error'>E<span>r</span><span>r</span>or</p>
               </div>
-            </b:if>
-          </b:includable>
-          <b:includable id='threaded-comment-form' var='post'/>
-          <b:includable id='threaded_comment_js' var='post'/>
-          <b:includable id='threaded_comments' var='post'/>
-        </b:widget>
-      </b:section>
-      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+            </if>
+          </includable>
+          <includable id='threaded-comment-form' var='post'/>
+          <includable id='threaded_comment_js' var='post'/>
+          <includable id='threaded_comments' var='post'/>
+        </widget>
+      </section>
+      <if cond='data:blog.url == data:blog.homepageUrl'>
         <!-- FOOTER ABOUT SECTION [START] -->
-        <b:section class='about-us' id='about-us' maxwidgets='1' showaddelements='no'>
-          <b:widget id='HTML3' locked='true' mobile='yes' title='About Us' type='HTML' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='content'>&lt;img alt=&quot;&quot; src=&quot;URL-TO-LOGO&quot;/&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec vestibulum lorem. Nam ultricies dolor nulla, ut congue odio ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec vestibulum lorem. Nam ultricies dolor nulla, ut congue odio ultrices non. Ut sed tortor lobortis.&lt;/p&gt;</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-              <b:if cond='data:title != &quot;&quot;'>
+        <section class='about-us' id='about-us' maxwidgets='1' showaddelements='no'>
+          <widget id='HTML3' locked='true' mobile='yes' title='About Us' type='HTML' version='1'>
+            <widget-settings>
+              <widget-setting name='content'>&lt;img alt=&quot;&quot; src=&quot;URL-TO-LOGO&quot;/&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec vestibulum lorem. Nam ultricies dolor nulla, ut congue odio ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec vestibulum lorem. Nam ultricies dolor nulla, ut congue odio ultrices non. Ut sed tortor lobortis.&lt;/p&gt;</widget-setting>
+            </widget-settings>
+            <includable id='main'>
+              <if cond='data:title != &quot;&quot;'>
                 <h3><data:title/></h3>
-              </b:if>
+              </if>
               <div class='widget-content'>
                 <data:content/>
               </div>
-            </b:includable>
-          </b:widget>
-        </b:section>
+            </includable>
+          </widget>
+        </section>
         <!-- FOOTER ABOUT SECTION [END] -->
-      </b:if>
-      <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      </if>
+      <if cond='data:blog.url == data:blog.homepageUrl'>
         <!-- FOOTER SOCIAL SECTION [START] -->
         <div class='footer-social'>
           <div class='footer-social__title'>
@@ -1402,9 +1402,9 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
               <address><a href='URL-TO-OFFICE-ADDRESS-ON-MAP'><i class='icon ion-md-map'/>YOUR-ADDRESS</a></address>
             </div>
           </div>
-          <b:section class='contact' id='contact' showaddelement='yes'>
-            <b:widget id='ContactForm1' locked='true' mobile='yes' title='Contact Form' type='ContactForm' version='1'>
-              <b:includable id='main'>
+          <section class='contact' id='contact' showaddelement='yes'>
+            <widget id='ContactForm1' locked='true' mobile='yes' title='Contact Form' type='ContactForm' version='1'>
+              <includable id='main'>
                 <form name='contact-form'>
                   <input expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' expr:placeholder='data:contactFormNameMsg' name='name' required='required' type='text' value=''/>
                   <input expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' expr:placeholder='data:contactFormEmailMsg' name='email' required='required' type='email' value=''/>
@@ -1413,41 +1413,41 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
                   <p expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
                   <input class='contact-form-button' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
                 </form>
-              </b:includable>
-            </b:widget>
-            <b:widget id='HTML2' locked='true' mobile='yes' title='Company Location' type='HTML' version='1'>
-              <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<!-- IFRAME CODE OF MAPS WITH YOUR OFFICE ADDRESS -->]]></b:widget-setting>
-              </b:widget-settings>
-              <b:includable id='main'>
+              </includable>
+            </widget>
+            <widget id='HTML2' locked='true' mobile='yes' title='Company Location' type='HTML' version='1'>
+              <widget-settings>
+                <widget-setting name='content'><![CDATA[<!-- IFRAME CODE OF MAPS WITH YOUR OFFICE ADDRESS -->]]></widget-setting>
+              </widget-settings>
+              <includable id='main'>
                 <data:content/>
-              </b:includable>
-            </b:widget>
-          </b:section>
+              </includable>
+            </widget>
+          </section>
         </div>
         <!-- FOOTER CONTACTS SECTION [END] -->
-      </b:if>
+      </if>
       <footer>
         <!-- FOOTER CREDITS [START] -->
-        <b:section class='footer' id='footer' maxwidgets='1' showaddelement='no'>
-          <b:widget id='HTML10' locked='true' mobile='yes' title='Social Links' type='HTML' version='1'>
-            <b:widget-settings>
-              <b:widget-setting name='content'>&lt;nav id=&quot;social&quot;&gt;&lt;a class=&quot;twitter&quot; href=&quot;URL-TO-TWITTER-PROFILE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;icon ion-logo-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        <section class='footer' id='footer' maxwidgets='1' showaddelement='no'>
+          <widget id='HTML10' locked='true' mobile='yes' title='Social Links' type='HTML' version='1'>
+            <widget-settings>
+              <widget-setting name='content'>&lt;nav id=&quot;social&quot;&gt;&lt;a class=&quot;twitter&quot; href=&quot;URL-TO-TWITTER-PROFILE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;icon ion-logo-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;github&quot; href=&quot;URL-TO-GITHUB-PROFILE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Github&quot;&gt;&lt;i class=&quot;icon ion-logo-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class=&quot;facebook&quot; href=&quot;URL-TO-FACEBOOK-PAGE&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;icon ion-logo-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;/nav&gt;&lt;style type=&#39;text/css&#39;&gt;#HTML10 #social { position: absolute; right: 5%; top: 16px; } #HTML10 #social .icon { font-size: 32px; padding: 8px; } @media (max-width: 1012px) { #HTML10 #social { position: static; } } @media (max-width: 664px) { #HTML10 #social .icon { font-size: 24px; } }&lt;/style&gt;</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
+&lt;/nav&gt;&lt;style type=&#39;text/css&#39;&gt;#HTML10 #social { position: absolute; right: 5%; top: 16px; } #HTML10 #social .icon { font-size: 32px; padding: 8px; } @media (max-width: 1012px) { #HTML10 #social { position: static; } } @media (max-width: 664px) { #HTML10 #social .icon { font-size: 24px; } }&lt;/style&gt;</widget-setting>
+            </widget-settings>
+            <includable id='main'>
               <data:content/>
-            </b:includable>
-          </b:widget>
-        </b:section>
+            </includable>
+          </widget>
+        </section>
         Blogger Template &#171;Startupium&#187; | Powered by Blogger<br/>
         <i class='icon ion-md-code'/> with <i class='icon ion-md-heart'/> by <a href='https://www.web-xaser.ru' rel='noopener' style='color: #000;' target='_blank'><b>@web_xaser</b></a>
         <!-- FOOTER CREDITS [END] -->
       </footer>
     </div>
-    <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <if cond='data:blog.url == data:blog.homepageUrl'>
       <!-- TEXT SLIDER SCRIPT [START] -->
       <script type='text/javascript'>
         // Source: https://codepen.io/dheerajkawatra/pen/gwdoEJ
@@ -1499,7 +1499,7 @@ font: 400 16px/2 'Open Sans', Helvetica, Arial, sans-serif;
         //]]>
       </script>
       <!-- PRELOADER SCRIPT [END] -->
-    </b:if>
-    <b:include data='blog' name='google-analytics'/>
+    </if>
+    <include data='blog' name='google-analytics'/>
   </body>
 </html>
